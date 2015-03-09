@@ -2,3 +2,18 @@
 #
 # What is the 10 001st prime number?
 
+LAST = 10001
+primes = [2]
+i = 3
+
+while len(primes) < LAST:
+    is_prime = True
+    for prime in primes:
+        if i % prime == 0:
+            is_prime = False
+            break
+    if is_prime:
+        primes.append(i)
+    i += 2
+
+print(primes.pop())
