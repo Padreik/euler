@@ -2,12 +2,15 @@
 #
 # What is the 10 001st prime number?
 
+import math
+
 LAST = 10001
 primes = [2]
 i = 3
 
 while len(primes) < LAST:
     is_prime = True
+    #for prime in range(3, math.ceil(math.sqrt(i)) + 1):    # Optimisation found in forum
     for prime in primes:
         if i % prime == 0:
             is_prime = False
