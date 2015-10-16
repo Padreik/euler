@@ -33,7 +33,7 @@ for i in range(START, MAX - START + 1):
 
 sum = 0
 
-for number, isSum in enumerate(abundantsSum):.
+for number, isSum in enumerate(abundantsSum):
     if not isSum:
         sum += number
 
